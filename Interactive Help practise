@@ -1,0 +1,131 @@
+Last login: Wed Mar 19 22:03:49 on ttys000
+anagharmenon@Anaghas-MacBook-Pro ~ % python
+Python 3.13.2 (v3.13.2:4f8bb3947cf, Feb  4 2025, 11:51:10) [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> dir() #short for "directory"
+['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__']
+>>> dir(__builtins__)
+['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BaseExceptionGroup', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EncodingWarning', 'EnvironmentError', 'Exception', 'ExceptionGroup', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError', 'PythonFinalizationError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'ZeroDivisionError', '_', '_IncompleteInputError', '__build_class__', '__debug__', '__doc__', '__import__', '__loader__', '__name__', '__package__', '__spec__', 'abs', 'aiter', 'all', 'anext', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'exec', 'exit', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']
+>>> help(pow)
+
+>>> pow(2,10)
+1024
+>>> 2**10
+1024
+>>> help(heex)
+Traceback (most recent call last):
+  File "<python-input-5>", line 1, in <module>
+    help(heex)
+         ^^^^
+NameError: name 'heex' is not defined. Did you mean: 'hex'?
+>>> help(hex)
+
+>>> hex(10)
+'0xa'
+>>> 0Xa
+10
+>>> help modules
+  File "<python-input-9>", line 1
+    help modules
+         ^^^^^^^
+SyntaxError: invalid syntax
+>>> help('modules')
+
+Please wait a moment while I gather a list of all available modules...
+
+test_sqlite3: testing with SQLite version 3.45.3
+__future__          _stat               faulthandler        readline
+__hello__           _statistics         fcntl               reprlib
+__phello__          _string             filecmp             resource
+_abc                _strptime           fileinput           rlcompleter
+_aix_support        _struct             fnmatch             runpy
+_android_support    _suggestions        fractions           sched
+_apple_support      _symtable           ftplib              secrets
+_ast                _sysconfig          functools           select
+_asyncio            _sysconfigdata__darwin_darwin gc                  selectors
+_bisect             _testbuffer         genericpath         shelve
+_blake2             _testcapi           getopt              shlex
+_bz2                _testclinic         getpass             shutil
+_codecs             _testclinic_limited gettext             signal
+_codecs_cn          _testexternalinspection glob                site
+_codecs_hk          _testimportmultiple graphlib            smtplib
+_codecs_iso2022     _testinternalcapi   grp                 socket
+_codecs_jp          _testlimitedcapi    gzip                socketserver
+_codecs_kr          _testmultiphase     hashlib             sqlite3
+_codecs_tw          _testsinglephase    heapq               sre_compile
+_collections        _thread             hmac                sre_constants
+_collections_abc    _threading_local    html                sre_parse
+_colorize           _tkinter            http                ssl
+_compat_pickle      _tokenize           idlelib             stat
+_compression        _tracemalloc        imaplib             statistics
+_contextvars        _typing             importlib           string
+_csv                _uuid               inspect             stringprep
+_ctypes             _warnings           io                  struct
+_ctypes_test        _weakref            ipaddress           subprocess
+_curses             _weakrefset         itertools           symtable
+_curses_panel       _xxtestfuzz         json                sys
+_datetime           _zoneinfo           keyword             sysconfig
+_dbm                abc                 linecache           syslog
+_decimal            antigravity         locale              tabnanny
+_elementtree        argparse            logging             tarfile
+_functools          array               lxml                tempfile
+_hashlib            ast                 lzma                termios
+_heapq              asyncio             mailbox             test
+_imp                atexit              marshal             textwrap
+_interpchannels     base64              math                this
+_interpqueues       bdb                 mimetypes           threading
+_interpreters       binascii            mmap                time
+_io                 bisect              modulefinder        timeit
+_ios_support        builtins            multiprocessing     tkinter
+_json               bz2                 netrc               token
+_locale             cProfile            ntpath              tokenize
+_lsprof             calendar            nturl2path          tomllib
+_lzma               cmath               numbers             trace
+_markupbase         cmd                 opcode              traceback
+_md5                code                operator            tracemalloc
+_multibytecodec     codecs              optparse            tty
+_multiprocessing    codeop              os                  turtle
+_opcode             collections         pathlib             turtledemo
+_opcode_metadata    colorsys            pdb                 types
+_operator           compileall          pickle              typing
+_osx_support        concurrent          pickletools         typing_extensions
+_pickle             configparser        pip                 unicodedata
+_posixshmem         contextlib          pkgutil             unittest
+_posixsubprocess    contextvars         platform            urllib
+_py_abc             copy                plistlib            uuid
+_pydatetime         copyreg             poplib              venv
+_pydecimal          csv                 posix               warnings
+_pyio               ctypes              posixpath           wave
+_pylong             curses              pprint              weakref
+_pyrepl             dataclasses         profile             webbrowser
+_queue              datetime            pstats              wsgiref
+_random             dbm                 pty                 xml
+_scproxy            decimal             pwd                 xmlrpc
+_sha1               difflib             py_compile          xxlimited
+_sha2               dis                 pyclbr              xxlimited_35
+_sha3               doctest             pydoc               xxsubtype
+_signal             docx                pydoc_data          zipapp
+_sitebuiltins       email               pyexpat             zipfile
+_socket             encodings           queue               zipimport
+_sqlite3            ensurepip           quopri              zlib
+_sre                enum                random              zoneinfo
+_ssl                errno               re
+
+Enter any module name to get more help.  Or, type "modules spam" to search
+for modules whose name or summary contain the string "spam".
+
+>>> import math
+>>> dir()
+['__annotations__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'math']
+>>> dir(math)
+['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'exp2', 'expm1', 'fabs', 'factorial', 'floor', 'fma', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'sumprod', 'tan', 'tanh', 'tau', 'trunc', 'ulp']
+>>> help(radians)
+Traceback (most recent call last):
+  File "<python-input-14>", line 1, in <module>
+    help(radians)
+         ^^^^^^^
+NameError: name 'radians' is not defined
+>>> help(math.radians)
+
+>>> math.radians(180)
+3.141592653589793
