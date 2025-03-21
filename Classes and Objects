@@ -1,0 +1,48 @@
+PS C:\Users\INANMEN2> python
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> user1 = User()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'User' is not defined
+>>> user1.first_name = "Dave"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'user1' is not defined
+>>> class User:
+... pass
+  File "<stdin>", line 2
+    pass
+    ^
+IndentationError: expected an indented block after class definition on line 1
+>>> class User:
+...   pass
+...
+>>> user1 = User()
+>>> user1.first_name = "Dave"
+>>> user1.last_name = "Bowman"
+>>>
+>>> print(user1.first_name)
+Dave
+>>> print(user1.last_name)
+Bowman
+>>> first_naME = "aRTHUR"
+>>> first_name = "Arthur"
+>>> last_name = "Poole"
+>>> print(first_name, last_name)
+Arthur Poole
+>>> print(user1.first_name, user1.last_name)
+Dave Bowman
+>>> user2 = User()
+>>> user2.first_name = "Frank"
+>>> user2.last_name = "Poole"
+>>> print(user2.first_name, user2.last_name)
+Frank Poole
+>>> user1.age = 37
+>>> user2.favourite_book = "2001:A Space Odyssey"
+>>> print(user1.age)
+37
+>>> print(user2.age)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'User' object has no attribute 'age'
