@@ -27,3 +27,17 @@ print(launch_datetime)
 print(launch_time.hour)
 print(launch_time.minute)
 print(launch_time.second)
+
+
+#Access the current datetime
+
+now = datetime.datetime.today()
+print(now)
+
+#Convert Strings to Datetimes
+
+moon_landing = "7/20/1969"
+moon_landing_datetime = datetime.datetime.strptime(moon_landing, "%m/%d/%Y")
+print(f"This is the time{moon_landing_datetime}")
+
+

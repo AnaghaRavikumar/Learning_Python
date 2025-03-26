@@ -1,0 +1,45 @@
+>>> example = set()
+>>> dir(example)
+['__and__', '__class__', '__class_getitem__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__iand__', '__init__', '__init_subclass__', '__ior__', '__isub__', '__iter__', '__ixor__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__rand__', '__reduce__', '__reduce_ex__', '__repr__', '__ror__', '__rsub__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__xor__', 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update']
+>>> help(example.add)
+Help on built-in function add:
+
+add(...) method of builtins.set instance
+    Add an element to a set.
+
+    This has no effect if the element is already present.
+
+>>> example.add(42)
+>>> example.add(False)
+>>> example.add(3.14159)
+>>> example.add("Thorium")
+>>>
+>>> example
+{False, 42, 3.14159, 'Thorium'}
+>>> len(example)
+4
+>>> example.add(42) // sets does not take duplicates
+>>> example
+{False, 42, 3.14159, 'Thorium'}
+
+>>> example.remove(42)
+>>> example
+{False, 3.14159, 'Thorium'}
+
+>>> example.remove(50)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 50
+
+>>> help(example.discard)
+Help on built-in function discard:
+
+discard(...) method of builtins.set instance
+    Remove an element from a set if it is a member.
+
+    Unlike set.remove(), the discard() method does not raise
+    an exception when an element is missing from the set.
+
+>>> example.discard(59)
+>>> example
+{False, 3.14159, 'Thorium'}
