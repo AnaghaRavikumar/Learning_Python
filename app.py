@@ -3,7 +3,7 @@ from Student import Student
 from tkinter.font import names
 from Question import Question
 
-import docx
+# import docx
 
 import useful_tools
 from math import *
